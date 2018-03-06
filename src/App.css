@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.App {
+    min-height: 100%;
+}
+
+.App > div {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}

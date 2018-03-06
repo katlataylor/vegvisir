@@ -1,0 +1,10 @@
+.box {
+  border: 2px solid black;
+  width: 66px;
+  font-size: 30px;
+  background-color: #cbd50e;
+}
+
+.Intro {
+  background-color: rgb(69, 85, 140);
+}

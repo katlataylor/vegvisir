@@ -1,0 +1,13 @@
+.cat-image {
+  background-color: pink;
+  height: 250px;
+  /* margin: 20px 50px 60px 100px; */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+}
+
+.cat-text {
+  font-size: 22px;
+}
