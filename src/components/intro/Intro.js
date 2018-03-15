@@ -10,7 +10,7 @@ class Intro extends Component {
       top: Math.floor(Math.random() * 500),
       right: Math.floor(Math.random() * 500),
       counter: this.state.counter + 1 });
-    if(this.state.counter == 1) {
+    if(this.state.counter == 2) {
       this.props.setStage(2);
     }
   }

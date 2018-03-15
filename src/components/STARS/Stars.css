@@ -1,0 +1,14 @@
+.STARS {
+  background-image: url("../../images/sky.jpg");
+  background-repeat: repeat;
+  height: 11000px;
+}
+.sky-image {
+  background-color: #120c41;
+  height: 250px;
+  /* margin: 20px 50px 60px 100px; */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+}

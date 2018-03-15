@@ -24,9 +24,10 @@ class Room extends Component {
 
       <div className="Room">
         <h1> From where you stand where is the North ? </h1>
-        <button onClick={this.nextStage}> correct, go to next </button>
-        <button onClick={this.goToFirst}> wrong, go to first </button>
-        <img src={fish} onClick={this.goToFirst} />
+        <button onClick={this.nextStage}> FRONT </button>
+        <button onClick={this.goToFirst}> BACK </button>
+        <button onClick={this.goToFirst}> LEFT </button>
+        <button onClick={this.goToFirst}> RIGHT </button>
       </div>
     );
   }
