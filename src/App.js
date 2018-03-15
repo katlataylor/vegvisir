@@ -6,10 +6,39 @@ import Room from './components/Room/Room';
 import './App.css';
 import Rock from './components/Rock/Rock';
 import Mapp from './components/Mapp/Mapp';
+import { Transition } from 'react-transition-group' // ES6
+
+const duration = 800;
+
+const defaultStyle = {
+  transition: `all ${duration}ms`,
+  opacity: 1,
+  position: 'absolute',
+  left: 200,
+  zIndex: 9999,
+}
+
+const transitionStyles = {
+  entering: { left: 200 },
+  entered: { left: 800 }
+};
+
+const Fade = ({ in: inProp }) => (
+  <Transition in={inProp} timeout={duration}>
+    {(state) => (
+      <div style={{
+        ...defaultStyle,
+        ...transitionStyles[state]
+      }}>
+        <h1>Find</h1>
+      </div>
+    )}
+  </Transition>
+);
 
 class App extends Component {
 
-  state = {introCounter: 0, stage: 5};
+  state = {introCounter: 0, stage: 1, animateNorth: false};
 
   updateIntroCounter = (counter) => {
       this.setState({introCounter: counter})
@@ -19,10 +48,16 @@ class App extends Component {
     this.setState({stage: number})
   }
 
+  componentDidMount = () => {
+    this.setState({animateNorth: true});
+  }
+
+
   render() {
     return (
 
       <div className="App">
+        <Fade in={!!this.state.animateNorth} text="find" />
         {(this.state.stage == 1) && <Intro setStage={this.setStage} title="Find north" /> }
         {(this.state.stage == 2) && <Room setStage={this.setStage} /> }
         {(this.state.stage == 3) && <Stars setStage={this.setStage} /> }
