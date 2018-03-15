@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Mapp.css';
 import dot from '../../images/dot.png';
-import carte from '../../images/carte.jpg';
+import carte from '../../images/land.jpg';
 
 class Mapp extends Component {
 
 
-state = {mapp: [
-
+state = {
+  landvisible: false,
+  mapp: [
   {
     position: 'absolute',
     top: 20,
@@ -45,6 +46,10 @@ dotCorrect = () => {
   this.props.setStage(6);
 }
 
+toggleLand = () => {
+  this.setState({landvisible: !this.state.landvisible})
+}
+
 render() {
   const { anim } = this.state;
   return (
@@ -58,7 +63,15 @@ render() {
             left: 600,
             width: '20px'
           }} alt="dot" />
-      <img src={carte}alt="carte"/>
+      <img style={{
+        visibility: this.state.landvisible ? 'visible' : 'hidden'
+      }}
+      className="land" src={carte} alt="land"/>
+      <button style={{
+        position: 'absolute',
+        top: 5,
+        left:50
+      }} onClick={this.toggleLand}>map</button>
     </div>
   );
 }

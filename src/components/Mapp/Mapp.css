@@ -1,5 +1,13 @@
 .Mapp {
-  background-image: url("../../images/land.jpg");
+  background-image: url("../../images/carte.jpg");
   background-size: 1450px;
   background-repeat: no-repeat;
+}
+
+.land{
+  position:absolute;
+  top: 0px;
+  left: 300px;
+  height: 400px;
+  opacity: 0.8;
 }
