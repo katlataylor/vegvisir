@@ -37,6 +37,7 @@ fun = (counter) => {
 }
 
 dotClick = () => {
+  //go back to first stage if user clicks wrong image
   this.props.setStage(1);
 }
 
