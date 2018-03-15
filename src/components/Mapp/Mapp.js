@@ -2,6 +2,35 @@ import React, { Component } from 'react';
 import './Mapp.css';
 import dot from '../../images/dot.png';
 import carte from '../../images/land.jpg';
+import { Transition } from 'react-transition-group' // ES6
+
+const duration = 1000;
+
+const defaultLandStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+  display: 'inline-block',
+  backgroundColor: '#8787d8'
+}
+
+const transitionStyles = {
+  entering: { opacity: 0 },
+  entered: { opacity: 1 },
+}
+
+const FadeLandScape = ({ in: inProp }) => (
+  <Transition in={inProp} timeout={duration}>
+    {(state) => (
+      <div style={{
+        ...defaultLandStyle,
+        ...transitionStyles[state]
+      }}>
+        <img key="img" className="land" src={carte} alt="land"/>
+      </div>
+    )}
+  </Transition>
+);
+
 
 class Mapp extends Component {
 
@@ -28,6 +57,8 @@ state = {
     width: '20px'
   }
 ]};
+
+
 
 componentDidMount() {
 }
@@ -63,10 +94,7 @@ render() {
             left: 600,
             width: '20px'
           }} alt="dot" />
-      <img style={{
-        visibility: this.state.landvisible ? 'visible' : 'hidden'
-      }}
-      className="land" src={carte} alt="land"/>
+      <FadeLandScape in={!!this.state.landvisible} />
       <button style={{
         position: 'absolute',
         top: 5,

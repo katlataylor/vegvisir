@@ -9,7 +9,7 @@ import Mapp from './components/Mapp/Mapp';
 
 class App extends Component {
 
-  state = {introCounter: 0, stage: 4};
+  state = {introCounter: 0, stage: 5};
 
   updateIntroCounter = (counter) => {
       this.setState({introCounter: counter})
