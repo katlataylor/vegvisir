@@ -4,7 +4,7 @@ import dot from '../../images/dot.png';
 import carte from '../../images/land.jpg';
 import { Transition } from 'react-transition-group' // ES6
 
-const duration = 1000;
+const duration = 00;
 
 const defaultLandStyle = {
   transition: `opacity ${duration}ms ease-in-out`,
@@ -19,7 +19,7 @@ const transitionStyles = {
 }
 
 const FadeLandScape = ({ in: inProp }) => (
-  <Transition in={inProp} timeout={duration}>
+  <Transition in={inProp} timeout={0}>
     {(state) => (
       <div style={{
         ...defaultLandStyle,
