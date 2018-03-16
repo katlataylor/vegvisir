@@ -19,7 +19,7 @@ const transitionStyles = {
 }
 
 const FadeLandScape = ({ in: inProp }) => (
-  <Transition in={inProp} timeout={duration}>
+  <Transition in={inProp} timeout={0}>
     {(state) => (
       <div style={{
         ...defaultLandStyle,
