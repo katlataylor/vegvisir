@@ -11,3 +11,7 @@
   height: 400px;
   opacity: 0.8;
 }
+
+.dot {
+  z-index: 2
+}

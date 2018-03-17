@@ -86,9 +86,9 @@ render() {
   return (
     <div className="Mapp">
       {this.state.mapp.map(item => (
-        <img onClick={this.dotClick} src={dot} style={item} alt="dot" />
+        <img className="dot" onClick={this.dotClick} src={dot} style={item} alt="dot" />
       ))}
-      <img onClick={this.dotCorrect} src={dot} style={{
+      <img className="dot" onClick={this.dotCorrect} src={dot} style={{
             position: 'absolute',
             top: 10,
             left: 600,

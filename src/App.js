@@ -38,7 +38,7 @@ const Fade = ({ in: inProp }) => (
 
 class App extends Component {
 
-  state = {introCounter: 0, stage: 2, animateNorth: false};
+  state = {introCounter: 0, stage: 1, animateNorth: false};
 
   updateIntroCounter = (counter) => {
       this.setState({introCounter: counter})
