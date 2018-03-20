@@ -1,0 +1,40 @@
+.Stick {
+  background: url('../../images/branche.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Cfront {
+  border: 2px solid black;
+  width: auto;
+  font-size: 30px;
+  font-family: 'Trickster-Regular';
+  position: absolute;
+  cursor: url(../../images/U.png), auto;
+  background-color: #cbd50e;
+}
+
+.Cfront:hover{
+  background-color: rgb(12, 23, 82);
+  opacity: 0.70;
+
+}
+
+.C1{
+  top: 100px;
+  left: 200px;
+}
+
+.C2{
+  top: 370px;
+  left: 1050px;
+}
+
+.C3{
+  top: 600px;
+  left: 170px;
+}
+
+.C4{
+  top: 700px;
+  left: 860px;
+}

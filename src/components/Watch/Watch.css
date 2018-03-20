@@ -1,0 +1,53 @@
+.Watch {
+  background: url('../../images/back.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Dfront {
+  border: 2px solid black;
+  width: auto;
+  font-size: 30px;
+  font-family: 'Trickster-Regular';
+  position: absolute;
+  cursor: url(../../images/U.png), auto;
+  background-color: #cbd50e;
+}
+
+.Dfront:hover{
+  background-color: rgb(12, 23, 82);
+  opacity: 0.70;
+
+}
+
+.D1{
+  top: 100px;
+  left: 200px;
+}
+
+.D2{
+  top: 370px;
+  left: 1050px;
+}
+
+.D3{
+  top: 600px;
+  left: 170px;
+}
+
+.D4{
+  top: 700px;
+  left: 860px;
+}
+
+.ClockContainer {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Clock{
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}

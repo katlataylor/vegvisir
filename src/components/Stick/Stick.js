@@ -22,10 +22,10 @@ class Stick extends Component {
     return (
 
       <div className="Stick">
-        <button className="Cfront C1" onClick={this.nextStage}> NORTH </button>
+        <button className="Cfront C4" onClick={this.nextStage}> NORTH </button>
         <button className="Cfront C2" onClick={this.goToFirst}> NORTH </button>
         <button className="Cfront C3" onClick={this.goToFirst}> NORTH </button>
-        <button className="Cfront C4" onClick={this.goToFirst}> NORTH </button>
+        <button className="Cfront C1" onClick={this.goToFirst}> NORTH </button>
 
       </div>
     );
