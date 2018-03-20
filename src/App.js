@@ -7,6 +7,7 @@ import './App.css';
 import Rock from './components/Rock/Rock';
 import Mapp from './components/Mapp/Mapp';
 import { Transition } from 'react-transition-group' // ES6
+import Stick from './components/Stick/Stick';
 
 const duration = 800;
 
@@ -38,7 +39,7 @@ const Fade = ({ in: inProp }) => (
 
 class App extends Component {
 
-  state = {introCounter: 0, stage: 1, animateNorth: false};
+  state = {introCounter: 0, stage: 4, animateNorth: false};
 
   updateIntroCounter = (counter) => {
       this.setState({introCounter: counter})
@@ -57,13 +58,14 @@ class App extends Component {
     return (
 
       <div className="App">
-        <Fade in={!!this.state.animateNorth} text="find" />
-        {(this.state.stage == 1) && <Intro setStage={this.setStage} title="Find north" /> }
+        {/*<Fade in={!!this.state.animateNorth} text="find" />*/}
+        {(this.state.stage == 1) && <Intro setStage={this.setStage} /> }
         {(this.state.stage == 2) && <Room setStage={this.setStage} /> }
         {(this.state.stage == 3) && <Stars setStage={this.setStage} /> }
         {(this.state.stage == 4) && <Rock setStage={this.setStage} /> }
         {(this.state.stage == 5) && <Mapp setStage={this.setStage} /> }
-        {(this.state.stage == 6) && <h1>bla</h1> }
+        {(this.state.stage == 6) && <Stick setStage={this.setStage} /> }
+        {(this.state.stage == 7) && <h1>bla</h1> }
       </div>
     );
   }

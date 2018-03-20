@@ -15,7 +15,7 @@ class Rock extends Component {
         position: 'absolute',
         top: 20,
         left: 200,
-        width: '50px'
+        width: '90px'
       },
       image: rock1
 
@@ -24,8 +24,8 @@ class Rock extends Component {
       style: {
         position: 'absolute',
         top: 150,
-        left: 500,
-        width: '50px'
+        left: 800,
+        width: '170px'
       },
       image: rock2
 
@@ -35,7 +35,7 @@ class Rock extends Component {
         position: 'absolute',
         top: 150,
         left: 300,
-        width: '50px'
+        width: '110px'
       },
       image: rock3
     }
@@ -66,9 +66,9 @@ class Rock extends Component {
         ))}
         <img onClick={this.rock4} src={rock4} style={{
               position: 'absolute',
-              top: 300,
-              left: 300,
-              width: '200px'
+              top: 400,
+              left: 400,
+              width: '250px'
             }} alt="rock" />
       </div>
     );

@@ -40,8 +40,8 @@ state = {
   mapp: [
   {
     position: 'absolute',
-    top: 20,
-    left: 200,
+    top: 10,
+    left: 600,
     width: '20px'
   },
   {
@@ -90,8 +90,8 @@ render() {
       ))}
       <img className="dot" onClick={this.dotCorrect} src={dot} style={{
             position: 'absolute',
-            top: 10,
-            left: 600,
+            top: 20,
+            left: 200,
             width: '20px'
           }} alt="dot" />
       <FadeLandScape in={!!this.state.landvisible} />

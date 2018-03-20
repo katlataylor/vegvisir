@@ -23,11 +23,12 @@ class Room extends Component {
     return (
 
       <div className="Room">
-        <h1> From where you stand where is the North ? </h1>
-        <button onClick={this.nextStage}> FRONT </button>
-        <button onClick={this.goToFirst}> BACK </button>
-        <button onClick={this.goToFirst}> LEFT </button>
-        <button onClick={this.goToFirst}> RIGHT </button>
+        <h1 className="title2"> From where you stand where is the North ? </h1>
+        <button className="Bfront b1" onClick={this.nextStage}> FRONT </button>
+        <button className="Bfront b2" onClick={this.goToFirst}> BACK </button>
+        <button className="Bfront b3" onClick={this.goToFirst}> LEFT </button>
+        <button className="Bfront b4" onClick={this.goToFirst}> RIGHT </button>
+
       </div>
     );
   }

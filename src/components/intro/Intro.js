@@ -30,6 +30,9 @@ class Intro extends Component {
           Here
         </div>
         <p style={{'font-size': this.state.counter*10}}>{this.state.counter}</p>
+        <h1 className="title"> FIND NORTH </h1>
+
+
       </div>
     );
   }

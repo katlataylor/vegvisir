@@ -1,5 +1,44 @@
-
-
 .Room {
-  background: rgb(115, 47, 131);
+  background-image: url('../../images/back.png');
+}
+.title2{
+  font-family: 'Trickster-Regular';
+  font-size: 59px;
+  text-align:left;
+  margin-top: 100px;
+  color: rgb(12, 23, 82);
+}
+.Bfront {
+  border: 2px solid black;
+  width: auto;
+  font-size: 30px;
+  font-family: 'Trickster-Regular';
+  position: absolute;
+  cursor: url(../../images/U.png), auto;
+  background-color: #cbd50e;
+}
+
+.Bfront:hover{
+  background-color: rgb(12, 23, 82);
+
+}
+
+.b1{
+  top: 300px;
+  left: 200px;
+}
+
+.b2{
+  top: 370px;
+  left: 530px;
+}
+
+.b3{
+  top: 600px;
+  left: 170px;
+}
+
+.b4{
+  top: 460px;
+  left: 400px;
 }

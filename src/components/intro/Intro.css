@@ -2,11 +2,19 @@
   border: 2px solid black;
   width: 66px;
   font-size: 30px;
-  font: Trickster-Regular;
+  font-family: 'Trickster-Regular';
 
   background-color: #cbd50e;
 }
 
 .Intro {
-  background-color: rgb(69, 85, 140);
+  background-image: url('../../images/back.png');
+
+}
+.title{
+  font-family: 'Trickster-Regular';
+  font-size: 150px;
+  text-align: center;
+  margin-top: 300px;
+  color: rgb(12, 23, 82);
 }
